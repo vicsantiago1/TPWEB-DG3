@@ -916,7 +916,8 @@ section,
 }
 
 .about .content h2 {
-  font-weight: 900;
+  font-weight: 500;
+  font-size: 200px;
 }
 
 .about .content p:last-child {

@@ -42,7 +42,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #000000;
   --surface-color: #ffffff;
 }
 
@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: #ffffff;
   font-family: var(--heading-font);
 }
 
@@ -501,7 +501,7 @@ h6 {
 }
 
 .footer .footer-about p {
-  font-size: 14px;
+  font-size: 17px;
   font-family: var(--heading-font);
 }
 
@@ -713,7 +713,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #000000;
   padding: 60px 0;
   scroll-margin-top: 98px;
   overflow: clip;
@@ -737,9 +737,10 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 75px;
+  font-weight: 300;
   position: relative;
+  color:#000000
 }
 
 .section-title h2:before,
@@ -909,14 +910,16 @@ section,
   font-weight: 500;
   line-height: 10px;
   padding: 10px 20px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background: color-mix(in srgb, var(--accent-color), transparent 95%)
   color: var(--accent-color);
   border-radius: 7px;
   display: inline-block;
 }
 
 .about .content h2 {
-  font-weight: 900;
+  font-weight: 300;
+  font-size: 75px;
+
 }
 
 .about .content p:last-child {
@@ -928,7 +931,7 @@ section,
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 200;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px;
@@ -959,20 +962,57 @@ section,
   padding: 50px 40px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.0);
   border-radius: 10px;
+  text-align: center;
   transition: all 0.3s ease-out 0s;
 }
 
-.about .fondo1 {
-  background-color: var(--surface-color);
-  background-image: url(assets/img/VARIEDAD.png);
+.about .fondo1{
+  background-image: url(../img/VARIEDAD.png);
   padding: 50px 40px;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   position: center;
   width: 361px;
   height: 364px;
   border-radius: 10px;
   transition: all 0.3s ease-out 0s;
 }
+
+.about .fondo2{
+  background-image: url(../img/AUTENTICIDAD.jpg);
+  padding: 50px 40px;
+  position: center;
+  width: 361px;
+  height: 364px;
+  border-radius: 10px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.about .Alinearcentro{
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
+.about .icono1{
+  display: inline-block;
+  margin: 0;
+  align-items: center; /* Centrado vertical */
+  align-items: center; /* Centrado vertical */
+  width: 112px;
+  height: 112px;
+  border-radius: 0px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.about .icono2{
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  align-items: center; /* Centrado vertical */
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  transition: all 0.3s ease-out 0s;
+}
+
 
 .about .icon-box i {
   width: 80px;
@@ -991,8 +1031,8 @@ section,
 
 .about .icon-box h3 {
   margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 44px;
+  font-weight: 200;
   position: center
 }
 
@@ -1077,6 +1117,13 @@ section,
 .services .service-item {
   position: relative;
   padding-top: 40px;
+  Background-color: #ffff
+
+}
+
+.services {
+Background-color: #ffff
+
 }
 
 .services .service-item:before {
@@ -1137,6 +1184,8 @@ section,
 
 .services .service-item .title a {
   color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .services .service-item .title a:hover {
@@ -1147,6 +1196,7 @@ section,
   line-height: 24px;
   font-size: 14px;
 }
+
 
 /*--------------------------------------------------------------
 # Features Section
