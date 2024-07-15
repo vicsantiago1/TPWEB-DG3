@@ -11,9 +11,13 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@import url("'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'")
+
+
 :root {
-  --default-font: "DM Sans",  system-ui, -apple-system, "DM Sans", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Bebas Neue",  sans-serif;
+  --default-font: "Poppins",  system-ui, -apple-system, "Poppins", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Poppins",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -65,7 +69,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: "Pppoins";
 }
 
 a {
@@ -85,8 +89,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ffffff;
-  font-family: var(--heading-font);
+  color: #000000;
+  font-family: "Poppins";
 }
 
 /* PHP Email Form Messages
@@ -157,8 +161,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 40px;
+  margin-left: 5px;
+  margin-top: 18px;
 }
 
 .header .logo h1 {
@@ -180,12 +185,17 @@ h6 {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: 'Bebas Neue';
-  font-weight: 400;
-  font-size: 18px;
-  padding: 8px 26px;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
   margin: 0;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 0.3s;
+  margin: 0 80px 0 0;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .header .btn-getstarted:hover,
@@ -226,9 +236,9 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: #ffffff;
-  --heading-color: #32353a;
-  --nav-color: #3a3939;
+  background-color: rgba(0, 0, 0, 0.5);;
+  --heading-color: #ffffff;
+  --nav-color: #ffffff;
   --nav-hover-color: #091FFE;
 }
 
@@ -258,7 +268,7 @@ h6 {
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
-    font-family: var(--nav-font);
+    font-family: "Poppins";
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -376,9 +386,9 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
-    font-size: 17px;
-    font-weight: 500;
+    font-family:"Poppins";
+    font-size: 22px;
+    font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -472,11 +482,12 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: white; /* Cambiar todo el texto a blanco */
   background-color: var(--background-color);
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
+  font-family: "Poppins"; /* Cambiar la tipografía a Poppins */
 }
 
 .footer .footer-top {
@@ -493,16 +504,15 @@ h6 {
 }
 
 .footer .footer-about .logo span {
-  color: var(--heading-color);
+  color: white; /* Cambiar color del título a blanco */
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: var(--heading-font);
 }
 
 .footer .footer-about p {
+  color: white; /* Cambiar color del texto a blanco */
   font-size: 17px;
-  font-family: var(--heading-font);
 }
 
 .footer .social-links a {
@@ -512,9 +522,9 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid white; /* Cambiar borde a blanco */
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: white; /* Cambiar color del icono a blanco */
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -525,6 +535,7 @@ h6 {
 }
 
 .footer h4 {
+  color: white; /* Cambiar color del título a blanco */
   font-size: 16px;
   font-weight: bold;
   position: relative;
@@ -558,7 +569,7 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: white; /* Cambiar color del texto a blanco */
   display: inline-block;
   line-height: 1;
 }
@@ -568,16 +579,18 @@ h6 {
 }
 
 .footer .footer-contact p {
+  color: white; /* Cambiar color del texto a blanco */
   margin-bottom: 5px;
 }
 
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  background-color: #091FFE;
 }
 
 .footer .copyright p {
+  color: white; /* Cambiar color del texto a blanco */
   margin-bottom: 0;
 }
 
@@ -586,6 +599,15 @@ h6 {
   font-size: 13px;
 }
 
+.footer .social-links a,
+.footer .footer-links ul a {
+  font-family: "Poppins"; /* Asegurar que la tipografía sea Poppins para estos elementos */
+}
+
+.footer .social-links a:hover,
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -761,13 +783,18 @@ section,
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+background-image: url("../img/hero-bg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -779,13 +806,17 @@ section,
 
 .hero .btn-primary {
   font-family: 'Bebas Neue';
-  font-size: 22px;
+  font-size: 16px;
   font-weight:200;
-  border-radius: 10px;
-  padding: 8px 26px;
+  border-radius: 5px;
+  padding: 12px 24px;
+  letter-spacing: 1px;
   border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #091FFE;
-  color: #ffffff;
+  color:#ffffff;
 }
 
 .hero img {
@@ -860,12 +891,19 @@ section,
 }
 
 @media (max-width: 768px) {
+
+.hero{
+  background-image: url("../img/mobilehiro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
   .hero h2 {
-    font-size: 32px;
+    font-size: 50px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -889,6 +927,10 @@ section,
   transition: 0.3s;
   opacity: 0.5;
   filter: grayscale(100);
+}
+
+.clients {
+  Background-color: #ffff
 }
 
 .clients .client-logo img:hover {
@@ -929,9 +971,9 @@ section,
 .about .content .read-more {
   background: var(--accent-color);
   color: var(--contrast-color);
-  font-family: var(--heading-font);
+  font-family: "Bebas Neue";
   font-weight: 200;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 1px;
   padding: 12px 24px;
   border-radius: 5px;
@@ -967,22 +1009,27 @@ section,
 }
 
 .about .fondo1{
-  background-image: url(../img/VARIEDAD.png);
+  background-image: url(../img/1variedad.png);
   padding: 50px 40px;
-  position: center;
-  width: 361px;
-  height: 364px;
+  width: 380px;
+  height: 340px;
   border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
   transition: all 0.3s ease-out 0s;
 }
 
 .about .fondo2{
-  background-image: url(../img/AUTENTICIDAD.jpg);
+  background-image: url(../img/1AUTENTICIDAD.png);
   padding: 50px 40px;
   position: center;
   width: 361px;
   height: 364px;
   border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -1095,20 +1142,19 @@ section,
 }
 
 .stats .stats-item span {
+  font-family: "Bebas Neue"; /* Mantener Bebas Neue para los números */
   font-size: 80px;
   display: block;
-  color: #091FFE;
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .stats .stats-item p {
-  font-family: 'DM Sans'
-  padding: 0;
+  font-family: "Poppins"; /* Cambiar la tipografía a Poppins */
   margin: 0;
-  font-family: var(--heading-font);
-  font-size: 30px;
-  font-weight: 150;
-  color: color-mix(in srgb, var(--default-color), transparent 0%);
+  font-size: 18px;
+  font-weight: 500;
+  color: white; /* Cambiar el color del texto a blanco */
 }
 
 /*--------------------------------------------------------------
@@ -1121,7 +1167,7 @@ section,
 
 }
 
-.services {
+.services  {
 Background-color: #ffff
 
 }
@@ -1185,7 +1231,7 @@ Background-color: #ffff
 .services .service-item .title a {
   color: var(--heading-color);
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .services .service-item .title a:hover {
@@ -1194,7 +1240,8 @@ Background-color: #ffff
 
 .services .service-item .description {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "poppins";
 }
 
 
@@ -1203,6 +1250,9 @@ Background-color: #ffff
 --------------------------------------------------------------*/
 .features .features-item {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-top: 5em; /* Ajusta esta medida según necesites */
+  padding: 1em 0; /* Padding superior e inferior de 1em, sin padding a los lados */
+
 }
 
 .features .features-item+.features-item {
@@ -1222,6 +1272,7 @@ Background-color: #ffff
 
 .features .features-item .btn-get-started {
   background-color: var(--accent-color);
+  font-family: "Bebas Neue";
   color: var(--contrast-color);
   padding: 8px 30px 10px 30px;
   border-radius: 4px;
@@ -1253,9 +1304,17 @@ Background-color: #ffff
 }
 
 .features .features-item img {
-  border: 6px solid var(--surface-color);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  margin-right: -100px; /* Mueve la imagen 20px a la izquierda */
+  width: 100%; /* Ancho del 100% del contenedor */
+  height: auto; /* Alto fijo */
+  object-fit: contain; /* La imagen se ajusta dentro del contenedor */
+  position: relative;
+  left: -20px; /* Mueve la imagen 20px a la izquierda */
+  top: 10px; /* Ajusta la posición vertical de la imagen según sea necesario */
 }
+  /*border: 6px solid var(--surface-color);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);*/
+
 
 .features .features-item .features-img-bg {
   position: relative;
@@ -1280,7 +1339,14 @@ Background-color: #ffff
 .features .features-item .image-stack {
   display: grid;
   position: relative;
+  left: -60px; /* Mueve la imagen 20px a la izquierda */
   grid-template-columns: repeat(12, 1fr);
+  margin-right: -20px; /* Mueve la imagen 20px a la izquierda */
+  transform: scale(1.7); /* Agranda el contenedor al 120% */
+  width: 1000px; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Asegura que la altura se ajuste automáticamente */
+  padding: 10px; /* Añade padding alrededor del contenido del contenedor */
+  margin: 5px; /* Añade margen alrededor del contenedor */
 }
 
 .features .features-item .image-stack .stack-back {
@@ -1551,7 +1617,13 @@ Background-color: #ffff
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
+.faq {
+  background-color: #fff; /* Fondo blanco para toda la sección FAQ */
+}
+
+
 .faq .content h3 {
+  color: #000000
   font-weight: 400;
   font-size: 34px;
 }
@@ -1559,6 +1631,10 @@ Background-color: #ffff
 .faq .content p {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.Faq section{
+background-color:#fff   
 }
 
 .faq .faq-container .faq-item {
@@ -1586,7 +1662,7 @@ Background-color: #ffff
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  color: #2b00ff;
   padding-right: 5px;
 }
 
@@ -1727,6 +1803,28 @@ Background-color: #ffff
   clip-path: inset(0);
 }
 
+.call-to-action {
+  background-image: url("../img/callaction2.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/*.call-to-action {
+  background-image: url("../im");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
 .call-to-action img {
   position: fixed;
   top: 0;
@@ -1734,17 +1832,19 @@ Background-color: #ffff
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 1;
+  opacity: 1;
+  filter:none
 }
 
-.call-to-action:before {
+/*.call-to-action:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
-}
+}*/
 
 .call-to-action .container {
   position: relative;
@@ -1762,7 +1862,7 @@ Background-color: #ffff
 }
 
 .call-to-action .cta-btn {
-  font-family: var(--heading-font);
+  font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1776,8 +1876,16 @@ Background-color: #ffff
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  background: #0d00ff;
+  border: 2px solid #0015ff;
+}
+
+@media (max-width: 1024px) {
+  .call-to-action {
+background-image: url("../img/CallActionmobile.jpg");
+background-size:cover;
+background-position: top;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1791,6 +1899,7 @@ Background-color: #ffff
 .testimonials .swiper {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
   background-color: var(--surface-color);
+  border-radius: 15px; /* Ajusta el valor según tus necesidades */
 }
 
 .testimonials .testimonials-carousel,
@@ -1809,7 +1918,7 @@ Background-color: #ffff
   width: 90px;
   height: 90px;
   border-radius: 50px;
-  border: 6px solid var(--background-color);
+  border: 6px solid #091FFE;
   margin-right: 10px;
 }
 
@@ -1830,7 +1939,7 @@ Background-color: #ffff
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: #1100ff;
   margin: 0 1px;
 }
 
@@ -1898,11 +2007,11 @@ Background-color: #ffff
 # Recent Posts Section
 --------------------------------------------------------------*/
 .recent-posts article {
-  background: var(--surface-color);
+  background: #091FFE;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  height: 100%;
-  border-radius: 10px;
+  height: ;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -1919,38 +2028,41 @@ Background-color: #ffff
 }
 
 .recent-posts .title {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 60px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
   padding: 0;
   margin: 0 0 20px 0;
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .recent-posts .title a {
-  color: var(--heading-color);
+  color: #ffffff;
   transition: 0.3s;
 }
 
 .recent-posts .title a:hover {
-  color: var(--accent-color);
+  color: #000000;
 }
 
-.recent-posts .post-author-img {
+/*.recent-posts .post-author-img {
   width: 50px;
   border-radius: 50%;
   margin-right: 15px;
-}
+}*/
 
-.recent-posts .post-author {
+/*.recent-posts .post-author {
   font-weight: 600;
   margin-bottom: 5px;
-}
+}*/
 
-.recent-posts .post-date {
+/*.recent-posts .post-date {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin-bottom: 0;
-}
+}*/
 
+/*--------------------------------------------------------------
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1961,25 +2073,31 @@ Background-color: #ffff
 
 .contact .info-item i {
   font-size: 38px;
+  font-weight: 200px;
+  font-family: "Poppins";
   line-height: 0;
-  color: var(--accent-color);
+  color: rgb(0, 13, 255); /* Cambio de color de la fuente a blanco */
 }
 
 .contact .info-item h3 {
+  font-family: "Poppins";
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   margin: 20px 0 10px 0;
+  color: white; /* Cambio de color de la fuente a blanco */
 }
 
 .contact .info-item p {
   padding: 0;
+  font-family: "poppins";
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: white; /* Cambio de color de la fuente a blanco */
 }
 
 .contact .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: var(--surface-color);
   padding: 30px;
   height: 100%;
 }
@@ -1987,11 +2105,12 @@ Background-color: #ffff
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
+  font-family: "poppins";
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
+  color: white; /* Cambio de color de la fuente a blanco */
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
@@ -2009,17 +2128,20 @@ Background-color: #ffff
 }
 
 .contact .php-email-form button[type=submit] {
+  font-family: "Poppins";
   background: var(--accent-color);
   color: var(--contrast-color);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
   border-radius: 4px;
+  color: white; /* Cambio de color de la fuente a blanco */
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -2694,18 +2816,21 @@ Background-color: #ffff
 }
 
 .comment-form form h4 {
+  font-family: "Poppins";
   font-weight: bold;
   font-size: 22px;
 }
 
 .comment-form form p {
+  font-family: "Poppins";
   font-size: 14px;
 }
 
 .comment-form form input {
   background-color: var(--surface-color);
-  color: var(--default-color);
+  color: #fff;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  font-family: "Poppins";
   font-size: 14px;
   border-radius: 4px;
   padding: 10px 10px;
@@ -2942,3 +3067,164 @@ Background-color: #ffff
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+
+/* ----------------COMENTARIO TIPOGRAFÍA----------------------<3 */
+
+.TITULO0{
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #fff;
+}
+
+.TITULO01{
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #fff;
+}
+
+.TITULO02{
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #000000;
+}
+
+.SUBTITULO01{
+    color: var(--heading-color);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "poppins";
+    color: #ffffff;
+}
+
+.SUBTITULO02{
+  font-family: "POPPINS";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 10px;
+  color: #000000;
+}
+
+.SUBTITULO03{
+  font-size: 44px;
+  font-weight: 500;
+  font-family: "Bebas Neue";
+  color: #ffffff;
+}
+
+.SUBTITULO04{
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 40px;
+  font-family: "Bebas Neue";
+  color: #ffffff;
+}
+
+.SUBTITULO05{
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 18px;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+
+.SUBTITULO06{
+  color: var(--heading-color);
+  margin-right: 120px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "poppins";
+  color: #ffffff;
+}
+
+.SUBTITULO06{
+  color: var(--heading-color);
+  margin-right: 120px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "poppins";
+  color: #ffffff;
+}
+
+.TEXTO01{
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.TEXTO02{
+  font-family: "Poppins";
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.TEXTO03{
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.TEXTO04{
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.TEXTO05{
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.TEXTOITALICA{
+  font-family: "Poppins", "italic";
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.TEXTOITALICA{
+  font-family: "Poppins", "italic";
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.BOTON01{
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.TEXTO02{
+  font-family: "Poppins";
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.SUBTITULO05{
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 18px;
+  font-family: "Bebas Neue";
+  color: #ffffff;
+}
+
